@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Privacy policy for Sabakk by techTMB: offline saves, Android backup, optional online rooms, retention, deletion and contact details." />
+<meta name="referrer" content="no-referrer" />
+<title>Sabakk Privacy Policy | techTMB</title>
+<style>
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #172b31; background: #f8f6f0; }
+body { margin: 0; } main { max-width: 760px; margin: auto; padding: 40px 22px 64px; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.15; margin-bottom: 12px; }
+h2 { font-size: 1.35rem; margin-top: 36px; } p { font-size: 1rem; line-height: 1.75; }
+a { color: #075e73; overflow-wrap: anywhere; text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid #916613; outline-offset: 4px; }
+.updated { color: #536366; } @media print { main { max-width: none; padding: 0; } }
+</style>
+</head>
+<body><main>
+<h1>Sabakk Privacy Policy</h1><p class="updated">Last updated: 8 October 2026</p>
+<p>Developer: techTMB<br />Privacy contact: <a href="mailto:techtmbmalta@gmail.com">techtmbmalta@gmail.com</a><br />App: Sabakk (Android package com.techtmb.sabakk)</p>
+<h2>1. What this policy covers</h2>
+<p>This policy explains privacy in Sabakk, including offline play, separately enabled experimental online rooms, this policy page, and privacy/support enquiries. The current release build has online play disabled. Offline play does not require an account, and Sabakk has no advertising, analytics, tracking, or third-party crash-reporting SDKs. We do not sell personal data or use it for targeted advertising.</p>
+<h2>2. Offline play and data on your device</h2>
+<p>Sabakk stores your saved match, game history, cards, chip totals, and setup preferences in the app’s private storage so you can resume play. Preferences include opponent count, difficulty, starting chips, and token choices. This data is processed on your device; Sabakk does not upload offline gameplay to our servers.</p>
+<p>The app does not request access to contacts, location, camera, microphone, photos, or advertising identifiers. It does not ask for your real name, email, payment details, or date of birth to play offline. Chips have no monetary value and the app does not process payments.</p>
+<h2>3. Android backup and device transfer</h2>
+<p>Android may back up your saved match and setup preferences, or transfer them to another device, depending on your device and backup settings. Your backup provider, such as Google or your device manufacturer, handles that service under its own privacy terms. We do not receive access to your backup. Online room credentials and online-session preferences are excluded from the app’s backup allowlist.</p>
+<h2>4. Experimental online rooms</h2>
+<p>This section applies only if you use a version with online play enabled. It does not describe network collection during offline play.</p>
+<p>When you host or join a room, the app sends your chosen player name, room code, token selections, readiness, game settings, and gameplay actions to the server address you select. It sends a randomly generated room-session credential on later requests so the server can recognise your seat. Requests and connection activity are used to run the match, keep players synchronised, support reconnection, and prevent abuse. Use a nickname rather than your real name.</p>
+<p>The server holds the room roster, session credentials, game state (including all hands), move history, request identifiers, and connection timestamps in memory. Other players in your room see your nickname, readiness/presence, chip totals, public moves, and hands when revealed by the rules. They do not receive your room credential or your unrevealed hand through the game’s player view.</p>
+<p>Our hosted test backend uses Render. The hosting/network providers process connection information such as IP addresses, request times and technical request metadata to deliver and secure the service. The server uses the connecting network address for admission rate limiting; behind a proxy this may be the proxy address. It does not use IP addresses to build advertising profiles. Provider infrastructure logs may be retained separately from the in-memory game.</p>
+<p>The app stores your chosen server address, nickname, token preferences, and room reconnect credential privately on your device. Leaving a room clears the local room code and credential, but keeps your nickname, server address, and token preferences. If you enter an independently operated server, that operator receives your online data and its own privacy practices apply; we cannot control its storage or use.</p>
+<h2>5. Policy page, external links, and support</h2>
+<p>Opening the online privacy policy or a source link launches your browser. The website host receives the information normally sent with a web request, including IP address, browser information, request time, and possibly a referring URL. This policy page is hosted by GitHub Pages. We do not add advertising, analytics scripts, cookies, forms, external fonts, or tracking pixels to this policy page. The host may process technical access data for delivery and security under its own policy.</p>
+<p>If you email us, we receive your email address, message, and any information or attachments you choose to send. We use them to answer your enquiry, investigate an issue, or respond to a privacy request. Our email providers process these communications to deliver and store them. Please do not send passwords, room credentials, or unnecessary sensitive information.</p>
+<h2>6. When data is shared</h2>
+<p>Data is shared only as needed for the activities described above: with other room participants, service providers for hosting/network operation and email, and your chosen Android backup provider. External website and independently operated server providers receive data when you choose to use their services. We may disclose information we hold if required by law or necessary to address fraud, security incidents, or legal claims. Offline saved games are not made available to other players or sent to us by the offline app.</p>
+<h2>7. Retention and deletion</h2>
+<p>Local saves and preferences remain until replaced or removed. To delete the app’s local data, use Android Settings &gt; Apps &gt; Sabakk &gt; Storage &gt; Clear storage (labels vary by device), or uninstall the app. This also removes locally saved online credentials. Cloud backups can outlast removal from your device or be restored later; manage or delete those through your backup provider’s settings.</p>
+<p>For our online backend, room state is held in memory, not a persistent game database. A guest leaving an unstarted lobby removes that guest; the host leaving a lobby or a player leaving a started match closes the room. Rooms also expire after an hour without activity or when a required player has been absent for more than ten minutes, checked periodically. Server restart clears in-memory rooms. Staying in a room for a rematch keeps its participants and credentials until the room closes or expires. Network failures can delay delivery of a leave request, in which case expiry still applies.</p>
+<p>Rate-limit counters cover a one-minute window. Expired entries are cleared on a later admission check or server restart, rather than guaranteed to be deleted exactly one minute later. Hosting providers may keep technical/security logs under their own retention practices. We do not promise that closing a room deletes those separate logs. Other participants may independently retain information they saw, for example in screenshots.</p>
+<p>We retain support correspondence only as long as needed to handle the enquiry, follow-up, and applicable legal obligations. You can request deletion using the privacy contact above. We cannot remotely erase data stored only on your device or directly delete backups controlled by your backup provider. There is no Sabakk user account to delete.</p>
+<h2>8. Security and your choices</h2>
+<p>Remote online connections use HTTPS. Local files use Android’s app-private storage and room access uses a random credential. No system can guarantee absolute security. You can play offline, avoid sharing identifying information in a nickname, leave an online room, manage Android backups, and clear local data at any time.</p>
+<p>Depending on where you live, you may have rights to access, correct, delete, restrict, or object to processing of personal data, obtain a copy, or complain to a data-protection authority. Contact us using the address above. We will respond as required by applicable law and may need enough information to identify your request. Hosting and email services may process data in countries other than your own; their published policies describe their locations and transfer safeguards.</p>
+<h2>9. Children’s privacy</h2>
+<p>Offline play does not require personal information or an age profile. We do not use behavioural advertising or knowingly request children’s personal information for offline play. If you are a parent or guardian and believe a child sent us personal information through support or an online room, contact us so we can investigate and address data we control. Avoid including real names or contact information in online nicknames.</p>
+<h2>10. Changes and provider policies</h2>
+<p>We will update this page and its date when our practices change. Adding advertising, analytics, accounts, or enabling online features in a store release may require updated disclosures before those features are released.</p>
+<p>Google privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br />Render privacy policy: <a href="https://render.com/privacy">https://render.com/privacy</a><br />GitHub privacy statement: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a></p>
+<p>For privacy questions or requests, contact <a href="mailto:techtmbmalta@gmail.com">techtmbmalta@gmail.com</a>.</p>
+</main></body>
+</html>
